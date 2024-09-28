@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400&display=swap');
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     
+}
+body{
+     background-color: whitesmoke;
+     font-family: 'Poppins', sans-serif;
+     width:100%;
+     overflow-x:hidden;
+}
+
+header{
+     background:linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/netflix.png);
+     background-position:top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width:100%; 
+     height:100vh;
+     
+     
+}
+/* .MohamedHafid{
+   color:aquamarinemarinemarinemarinemarine;
+   font-size:2rem;
+   margin:10px;
+} */
+.animatename{
+   position: relative;
+}
+.animatename:after{
+     content:"";
+     left:0;
+     height:80%;
+     position:absolute;
+     border:2px solid aquamarine;
+     animation:mohamedhafid 1.5s steps(12) infinite;
+}
+@keyframes mohamedhafid {
+     100%{
+          left:100%;
+     }
+}
+ .navbar{
+     /* color:rgba(255, 255, 255, 0.474); */
+     color:aquamarine;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     padding:5px 20px;
+     width: 100%;
+     flex-wrap: wrap;
+     position: absolute;
+} 
+
+.Main-heading p{
+     font-size: 2rem;
+     font-weight: bold;
+     flex:1
+}
+.Main-links ul{
+     display:inline-flex;
+     
+}
+
+.Main-links ul li{
+     list-style-type: none;
+     margin:15px 20px;
+}
+
+.Main-links li a{
+    text-decoration: none;
+    color:aquamarine;
+}
+
+.Main-links li a:hover{
+     color:white;
+}
+
+.forms{
+     width: 100%;
+     text-align: center;
+     padding-top:200px;
+}
+.forms input{
+     width:400px;
+     height:40px;
+     padding:5px;
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 1)  );
+     border:1px solid aquamarine;
+     outline:none;
+     color:white;
+     margin:10px;
+}
+.forms input:hover{
+     border:1px solid aquamarine;
+     
+}
+.forms button{
+     background-color: rgba(0, 255, 255, 0.538);
+     padding:10px;
+     border:none;
+     outline:none;
+     font-weight: bold;
+}
+.forms button:hover{
+     transform:scale(1.1);
+}
+#bar{
+     position: absolute;
+     cursor:pointer;
+     display:none;
+     
+}
+
+/* media queries */
+ @media screen and (max-width:800px)
+{
+     #bar{
+          display: block;
+          position:absolute;
+          top:10px;
+          right:20px;
+     }
+     
+     .forms input{
+          width:350px;
+     }
+     .navbar{
+         flex-direction: column;
+         background: rgba(0, 0, 0, 0.44);
+         border-top-right-radius: 200px;
+         border-right:2px solid white ;
+     }
+     .navbar .Main-heading p{
+          position: absolute;
+          left:10px;
+          top:10px;
+     }
+     .Main-links ul{
+          flex-direction: column;
+          margin:0;
+          padding:40px 0px;
+          display:none;
+     }
+     .Main-links .links{
+          height:100vh;
+          width: 100%;
+          display:block;
+     }
+     .Main-links ul li{
+          padding-top:60px;
+     }
+}
+  .movies{
+     margin: 50px auto;
+     text-align: center;
+     color:rgba(7, 5, 5, 0.329);
+ }
+ .row{
+     
+     width:80%;
+     display:flex;
+     margin:10px auto;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+ 
+}
+ .row .column{
+     width:400px;
+     height:70vh;
+     border:1px solid white;
+     position: relative;
+     border-radius: 20px;
+ }
+ .m1{
+     background:url(./Assets/leo.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: 0 0 4px 4px solid rgba(0, 0, 0, 0.471);
+
+}
+.m2{
+     background:url(./Assets/jailer.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: 0 0 4px 4px solid rgba(0, 0, 0, 0.471);
+
+}
+.m3{
+     background:url(./Assets/jawan);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     box-shadow: 0 0 4px 4px solid rgba(0, 0, 0, 0.471);
+
+}
+
+
+.m1:hover{
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/leo.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     transform: scale(1.05);
+     transition: 0.5s;
+}
+.m2:hover{
+     transform: scale(1.05);
+     transition: 0.5s;
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/jailer.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.m3:hover{
+     transform: scale(1.05);
+     transition: 0.5s;
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/jawan);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.column .overlay h1{
+     color:wheat;
+     padding:10px;
+     position:absolute;
+     color:white;
+     z-index:-1;
+}
+.column .overlay p{
+     text-align: center;
+     color:white;
+     position:absolute;
+     top:350px;
+     z-index:-1;
+}
+/* banner */
+.banner{
+     background:linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/banner\ image.jpeg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: 30px auto;
+     width:80%;
+     height:50vh;
+     position: relative;
+     display:flex;
+     border-radius: 20px;
+     /* align-items: center; */
+}
+
+
+.banner .text{
+     width:800px;
+     color:white;
+     padding:70px;
+}
+.banner .text h1{
+     font-size: 25px;
+    color:rgb(212, 30, 146);
+     margin:10px 0px;
+}
+.banner .text p{
+     margin:10px 0px;
+}
+/* trending */
+.trending{
+     background:linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  ),url(./Assets/movie\ image/1.jpeg);
+     position: relative;
+     background-position: top;
+     background-repeat:no-repeat;
+     background-size: cover;
+     width:80%;
+     height:100vh;
+     max-zoom: 10;
+     margin:30px auto;
+     scroll-behavior: smooth;
+     display:flex;
+     border-radius: 20px;
+}
+.trending:hover{
+     transform:scale(1.00001);
+
+}
+.trending .arrow{
+     color:white;
+     display: flex;
+     width:100%;
+     height:100%;
+     justify-content: space-between;
+     align-items: center;
+     cursor:pointer;
+    
+}
+.leftarrow{
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  );
+     border:4px solid aquamarine;
+     border-radius: 50%;
+     text-align: center;
+     width:50px;
+     margin-left:10px;
+     color:aquamarine;
+    
+}
+.rightarrow{
+     background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)  );
+     border:4px solid aquamarine;
+     text-align: center;
+     width:50px;
+     border-radius: 50%;
+     margin-right:10px;
+     color:aquamarine;
+}
+.rightarrow:hover{
+     box-shadow: 0 0 2px 2px white;
+
+} 
+.leftarrow:hover{
+     box-shadow: 0 0 2px 2px white;
+} 
+@media screen and (max-width:1000px)
+{
+    
+     .banner{
+          width:95%;
+     }
+     .leftarrow,.rightarrow{
+          width:30px;
+          font-size: 20px;
+
+     }
+     .trending{
+          height:80vh;
+          width:95%;
+     }
+}
+.loginbutton{
+     padding:0px 10px;
+     font-weight: bold;
+     border-radius: 5px;
+     height:30px;
+     margin:15px;
+     cursor:pointer;
+     border:none;
+     background-color: aquamarine;
+     outline:none;
+     transition: all 1s ease-in-out;
+}
+.loginbutton:hover{
+     background: aquamarinemarinemarine;
+     transform: scale(1.2);
+}
+
+#login{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    border-top-right-radius: 100px;
+    top:50px;
+    margin:auto;
+    background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8));
+    box-shadow: 0px 0px 2px 2px black;
+    transition: all 1s ease-in;
+    display:none;
+    
+}
+.logindown{
+     display:block !important;
+     display:block;
+}
+
+#login h1{
+     margin:30px 0px;
+     color:aquamarine;
+     font-weight: bold;
+}
+#login .linputs input{
+     border:.1px solid rgba(0, 255, 255, 0.612);
+}
+#login .linputs p{
+     color:white;
+     font-size:12px;
+     padding:10px;
+     margin-right:150px;
+}
+#login .linputs a{
+     color:violet;
+     cursor:pointer;
+}
+#login .linputs button{
+     background-color: aquamarine;
+     color:white;
+     font-weight: bold;
+     margin:40px 0px;
+}
+.xmark{
+     position:absolute;
+     top:0;
+     right:30px;
+     border: 4px solid aquamarine;
+     border-radius: 50%;
+     padding:5px;
+     width:35px;
+     font-size: 16px;
+     cursor:pointer;
+}
+
+/* mobile phone banner */
+.mobilephonebanner{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  margin:10px 0px;
+
+}
+.mobilephonebannerheading{
+     height:60vh;
+     width:30%;
+     padding:30px 0px;
+}
+.mobilephonebannerheading h1{
+    margin-bottom: 30px;
+     font-size: 2rem;
+     color:red;
+}
+.mobilephonebannerheading p{
+     font-size:1rem;
+     color:black;
+     line-height: 30px;
+}
+.mobilephonebannerimage{
+     display: flex;
+    background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)),url(./Assets/mobilephone.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:60vh;
+    width:50%;
+    border-radius: 20%;
+    border:1px solid white;
+    box-shadow: 0px 0px 4px 2px  black;
+}
+.mobilephonebannerimage:hover{
+     transform: scale(1.03);
+}
+@media  screen and (max-width:1000px)
+{
+   .mobilephonebanner{
+     flex-direction: column;
+     justify-content: center;
+   }
+   .mobilephonebannerheading{
+     display:flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 0px 100px;
+    width:1000px;
+    height:30%;
+   }
+   .mobilephonebannerheading h1{
+     width:500px;
+   }
+   .mobilephonebannerheading p{
+     width:500px;
+   }
+   .mobilephonebannerimage{
+     width:90%;
+     margin:0px 10px;
+   }
+}
+
+.footer{
+    background: linear-gradient(to top, rgba(41, 35, 35, 0.8) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.8)),url(./Assets/mobilephone.webp);
+     width:100%;
+   margin-top:50px;
+   margin-bottom:30px;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     border:1px solid white;
+     flex-wrap: wrap;
+     min-height:40vh;
+     border-radius: 30px;;
+}
+.footer-content h1{
+     color:red;
+     margin:10px;
+}
+
+.footer-content{
+     margin:10px;
+     width:40%;
+     line-height: 35px;
+     color:white;
+}
+.footer-links ul li{
+    margin-top:10px;
+    list-style-type: disc;
+
+}
+.footer-links ul li a{
+     text-decoration: none;
+     margin-top:10px;
+     color:red;
+}
+.footer-links ul li a:hover{
+  text-decoration:underline;
+  color:white;
+}
+@media screen and (max-width:1050) {
+     .footer-content h1{
+          font-size: 1rem;
+     }
+     .footer-content{
+          line-height: 30px;;
+     }
+}
+@media screen and (max-width:800px)
+{
+     .footer{
+          flex-direction: column;
+     }
+     .footer-content{
+          width:80%;
+     }
+    .footer-links{
+     margin:20px;
+    }
+}
